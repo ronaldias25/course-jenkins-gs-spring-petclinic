@@ -9,7 +9,7 @@ pipelines {
        }
        stage("capture") {
            steps {
-                archiveArtifacts '**/target/*.jar'
+               archiveArtifacts '**/target/*.jar'
                   jacoco()
                   junit '**/target/surefire-reports/TEST*.xml'
               }
