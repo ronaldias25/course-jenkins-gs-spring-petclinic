@@ -12,7 +12,7 @@ pipelines {
                archiveArtifacts '**/target/*.jar'
                   jacoco()
                   junit '**/target/surefire-reports/TEST*.xml'
-              }
+           }
        }
    }
 }
